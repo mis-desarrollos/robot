@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Robot Camino</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+</head>
+<body>
+  <h1>Programa al robot</h1>
+  <div class="program-area">
+    <div id="blocklyDiv" style="height: 100px; width: 600px;"></div>
+    <button id="playButton" onclick="ejecutarCodigo()">▶</button>
+  </div>
+  <div id="canvasContainer">
+    <canvas id="canvas" width="480" height="480"></canvas>
+  </div>
+
+  <xml id="toolbox" style="display: none">
+    <block type="avanzar"></block>
+    <block type="girar_derecha"></block>
+    <block type="girar_izquierda"></block>
+    <block type="bajar"></block>
+  </xml>
+
+  <script src="blocks.js"></script>
+  <script src="generators.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
